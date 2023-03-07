@@ -43,6 +43,7 @@ jobs:
         - V1CNC_Ramps
         - V1CNC_Ramps_Dual
         - V1CNC_Ramps_DualLR
+        - cnc_stroj_v2_Ramps
 
     steps:
 
