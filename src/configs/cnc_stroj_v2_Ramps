@@ -13,6 +13,8 @@ $CFGDIR/accessories/reprap_discount_full_graphic_lcd
 $CFGDIR/accessories/no-dual-endstops
 $CFGDIR/accessories/laser
 
+opt_set BAUDRATE 115200
+
 opt_set X_DRIVER_TYPE "DRV8825"
 opt_set Y_DRIVER_TYPE "DRV8825"
 opt_set Z_DRIVER_TYPE "DRV8825"
