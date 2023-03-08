@@ -38,11 +38,6 @@ jobs:
           github.event_name == 'pull_request' && '["bugfix-2.1.x", "2.1.1"]' ||
           '["2.1.1"]') }}
         machine:
-        - V13DP_Ramps_MK8
-        - V1ZXY_Ramps
-        - V1CNC_Ramps
-        - V1CNC_Ramps_Dual
-        - V1CNC_Ramps_DualLR
         - cnc_stroj_v2_Ramps
 
     steps:
