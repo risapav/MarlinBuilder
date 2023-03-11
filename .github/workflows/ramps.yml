@@ -33,8 +33,8 @@ jobs:
       matrix:
         branch: ${{ fromJson(
           github.event_name == 'schedule' && '["bugfix-2.1.x"]' ||
-          github.event_name == 'pull_request' && '["bugfix-2.1.x", "2.1.1"]' ||
-          '["2.1.1"]') }}
+          github.event_name == 'pull_request' && '["bugfix-2.1.x", "2.1.2"]' ||
+          '["2.1.2"]') }}
         machine:
         - cnc_stroj_v2_Ramps
         - default_Ramps
