@@ -46,10 +46,10 @@ jobs:
     
 
     # Based on .github/workflows/test-builds.yml
-    - name: Select Python 3.9
+    - name: Select Python 3.10
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9' # Version range or exact version of a Python version to use, using semvers version range syntax.
+        python-version: '3.10' # Version range or exact version of a Python version to use, using semvers version range syntax.
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
     - name: Install PlatformIO
@@ -59,7 +59,7 @@ jobs:
         
    # It is important to first install the libraries before compiling, since otherwise compilation might fail to find the just-installed libraries
     - name: Install platformIO libraries
-      run: pio pkg --global install olikraus/U8glib@^1.19.1
+      run: pio lib --global install olikraus/U8glib@^1.19.1
 
     - name: Check out MarlinBuilder
       uses: actions/checkout@v3
