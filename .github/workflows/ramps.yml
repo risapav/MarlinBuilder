@@ -56,12 +56,7 @@ jobs:
       run: |
         pip install -U https://github.com/platformio/platformio-core/archive/master.zip
         platformio update
-        
-   # It is important to first install the libraries before compiling, since otherwise compilation might fail to find the just-installed libraries
-    - name: Install platformIO libraries
-      run: pio lib --global install olikraus/U8glib@^1.19.1
-
-#      pio pkg install --library olikraus/U8glib@^1.19.1
+        pio lib --global install olikraus/U8glib@^1.19.1
       
     - name: Check out MarlinBuilder
       uses: actions/checkout@v3
