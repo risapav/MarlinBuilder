@@ -1,6 +1,9 @@
 name: ramps
 
 on:
+  concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    
   schedule:
     # At 12:15 each day. No idea what time zone this is...
     - cron:  '15 12 * * *'
@@ -41,7 +44,11 @@ jobs:
     steps:
 
     # First, cancel unfinished jobs.
-    - uses: technote-space/auto-cancel-redundant-job@v1
+#    - uses: technote-space/auto-cancel-redundant-job@v1
+    
+    
+   
+    
 
     # Based on .github/workflows/test-builds.yml
     - name: Select Python 3.10
