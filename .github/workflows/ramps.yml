@@ -59,7 +59,7 @@ jobs:
         
    # It is important to first install the libraries before compiling, since otherwise compilation might fail to find the just-installed libraries
     - name: Install platformIO libraries
-      run: pio pkg install olikraus/U8glib@^1.19.1
+      run: pio pkg install --library olikraus/U8glib@^1.19.1
       
 #      pio lib --global install olikraus/U8glib@^1.19.1
 
