@@ -55,8 +55,7 @@ jobs:
     - name: Install PlatformIO
       run: |
         pip install -U https://github.com/platformio/platformio-core/archive/master.zip
-        pio pkg update
-#        platformio update
+        platformio update
         
    # It is important to first install the libraries before compiling, since otherwise compilation might fail to find the just-installed libraries
     - name: Install platformIO libraries
