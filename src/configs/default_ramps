@@ -22,4 +22,3 @@ opt_set Z_DRIVER_TYPE "DRV8825"
 
 
 export PLATFORMIO_ENV=mega2560
-
