@@ -36,6 +36,7 @@ jobs:
           '["2.1.2"]') }}
         machine:
         - cnc_stroj_v2_Ramps
+        - default_Ramps
 
     steps:
 
