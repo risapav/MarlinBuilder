@@ -46,11 +46,10 @@ jobs:
     
 
     # Based on .github/workflows/test-builds.yml
-    - name: Select Python 3.10
+    - name: Select Python 3.9
       uses: actions/setup-python@v4
       with:
-        node-version: 16
-        python-version: '3.10' # Version range or exact version of a Python version to use, using semvers version range syntax.
+        python-version: '3.9' # Version range or exact version of a Python version to use, using semvers version range syntax.
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
     - name: Install PlatformIO
